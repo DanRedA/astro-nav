@@ -1,0 +1,16 @@
+---
+import navData from '../data/navData';
+
+// components
+import SearchIcon from './SearchIcon.astro';
+---
+<div class="nav-links">
+  <ul>
+    {
+      navData.map((item) => (
+        <a href={item.path}>{item.name}</a>
+      ))
+    }
+  </ul>
+  <SearchIcon />
+</div>

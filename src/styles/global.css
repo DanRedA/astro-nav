@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&display=swap');
+
+
+/* global styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* border: 1px solid gray; */
+}
+
+/* nav styles */
+.top-nav {
+  display: none;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.nav-links {
+  font-size: .8rem;
+  font-weight: 500;
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #f4f4f4;
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-transform: lowercase;
+}
+
+.nav-links a:hover, a:focus {
+  background-color: #f4f4f4;
+}
+
+.expanded {
+  display: unset;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 636px) {
+  .top-nav {
+    display: block;
+    position: static;
+    width: auto;
+  }
+  .top-nav a {
+    display: inline-block;
+    text-transform: lowercase;
+    padding: 12px 8px;
+  }
+  .top-nav a:hover, a:focus {
+    background-color: #f4f4f4;
+  }
+  .nav-links {
+    /* margin-left: 5em; */
+    display: none;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 8px 16px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+}
+
+.cart-icon {
+  cursor: pointer;
+}
+
+.svg-btn {
+  transition: .2s ease;
+}
+.svg-btn:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,15 @@
+---
+import navData from '../data/navData';
+
+// components
+
+---
+<div class="top-nav">
+  <ul>
+    {
+      navData.map((item) => (
+        <a href={item.path}>{item.name}</a>
+      ))
+    }
+  </ul>
+</div>

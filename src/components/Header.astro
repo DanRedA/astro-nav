@@ -1,0 +1,50 @@
+---
+// components
+import CartIcon from './CartIcon.astro';
+import LogoIcon from './LogoIcon.astro';
+import MenuIcon from './MenuIcon.astro';
+import Navigation from './Navigation.astro';
+import SearchIcon from './SearchIcon.astro';
+import TopNav from './TopNav.astro';
+---
+<header>
+  <nav>
+    <div class="nav-container">
+      <TopNav />
+      <a href="/" class="logo">
+        <LogoIcon />
+        <h3>LOGO<span>andSome...</span></h3>
+      </a>
+      <div class="nav-icons">
+        <SearchIcon />
+        <CartIcon />
+        <MenuIcon />
+      </div>
+    </div>   
+    <Navigation />
+  </nav>
+</header>
+
+<style>
+
+  nav {
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .logo {
+    padding: .5rem 0;
+    display: flex;
+    align-items: center;
+  }
+  span {
+    color: #bdbdbd;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .nav-icons {
+    display: flex;
+  }
+</style>
